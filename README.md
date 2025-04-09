@@ -31,3 +31,28 @@ This tool acts as a personal software engineer assistant that:
 
 ## 📂 Project Structure
 
+
+---
+
+## 🛠 Tech Stack
+
+- 🧠 LLMs: LLaMA 3, DeepSeek, Mistral
+- 🔍 Retrieval: FAISS, ChromaDB
+- 🧪 Testing: PyTest / JUnit / Selenium
+- ⚙️ Containerization: Docker / Firecracker
+- 🚀 Backend: Python
+- 💻 Local Deployment: CPU/GPU friendly (quantized model support)
+
+---
+
+## 📌 Setup Instructions
+
+> ⚠️ Clone the repo without downloading heavy model files (already ignored in `.gitignore`)
+
+```bash
+git clone https://github.com/Vijayhm/ai-codegen-assistant.git
+cd ai-codegen-assistant
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
