@@ -1,0 +1,157 @@
+[
+    {
+        "input": "Stash my uncommitted changes",
+        "output": "git stash",
+        "explanation": "Temporarily saves uncommitted changes to a stash for later retrieval."
+    },
+    {
+        "input": "Apply the last stashed changes",
+        "output": "git stash apply",
+        "explanation": "Applies the last stashed changes back to the working directory."
+    },
+    {
+        "input": "Undo the last commit but keep changes",
+        "output": "git reset --soft HEAD~1",
+        "explanation": "Reverts the last commit while keeping the changes in the staging area."
+    },
+    {
+        "input": "Force push changes to a remote repository",
+        "output": "git push --force",
+        "explanation": "Pushes changes forcibly, overwriting remote history (use with caution)."
+    },
+    {
+        "input": "Rebase the current branch onto main",
+        "output": "git rebase main",
+        "explanation": "Re-applies commits from the current branch onto the latest 'main' branch."
+    },
+    {
+        "input": "List all running EC2 instances",
+        "output": "aws ec2 describe-instances --filters Name=instance-state-name,Values=running",
+        "explanation": "Lists all currently running EC2 instances in your AWS account."
+    },
+    {
+        "input": "Create a new S3 bucket",
+        "output": "aws s3 mb s3://my-new-bucket",
+        "explanation": "Creates a new S3 bucket with the specified name."
+    },
+    {
+        "input": "Attach an IAM policy to a user",
+        "output": "aws iam attach-user-policy --user-name myuser --policy-arn arn:aws:iam::aws:policy/AmazonS3FullAccess",
+        "explanation": "Attaches the Amazon S3 Full Access policy to a specific IAM user."
+    },
+    {
+        "input": "Deploy an AWS Lambda function using SAM",
+        "output": "sam build && sam deploy --guided",
+        "explanation": "Builds and deploys a Lambda function using AWS Serverless Application Model (SAM)."
+    },
+    {
+        "input": "List all Docker volumes",
+        "output": "docker volume ls",
+        "explanation": "Displays a list of all Docker volumes available on the system."
+    },
+    {
+        "input": "Remove all unused Docker images",
+        "output": "docker image prune -a",
+        "explanation": "Removes all unused Docker images to free up disk space."
+    },
+    {
+        "input": "View logs of a running Docker container",
+        "output": "docker logs -f my_container",
+        "explanation": "Shows live logs of a running Docker container in real time."
+    },
+    {
+        "input": "Get detailed information about a Kubernetes node",
+        "output": "kubectl describe node my-node",
+        "explanation": "Provides detailed information about a specific Kubernetes node."
+    },
+    {
+        "input": "Scale a Kubernetes deployment to 5 replicas",
+        "output": "kubectl scale deployment my-deployment --replicas=5",
+        "explanation": "Scales a deployment to run 5 instances of a given application."
+    },
+    {
+        "input": "Get Kubernetes cluster events",
+        "output": "kubectl get events --sort-by=.metadata.creationTimestamp",
+        "explanation": "Lists recent events happening within the Kubernetes cluster."
+    },
+    {
+        "input": "Check disk usage of the root directory",
+        "output": "du -sh /",
+        "explanation": "Displays the total size of all files in the root directory."
+    },
+    {
+        "input": "Find the 10 largest files on the system",
+        "output": "find / -type f -exec du -h {} + | sort -rh | head -10",
+        "explanation": "Finds and lists the 10 largest files on the system sorted by size."
+    },
+    {
+        "input": "Monitor system processes in real time",
+        "output": "top",
+        "explanation": "Displays real-time information about running system processes."
+    },
+    {
+        "input": "Find all open network connections",
+        "output": "ss -tuln",
+        "explanation": "Lists all open TCP and UDP network connections."
+    },
+    {
+        "input": "Create a new virtual environment",
+        "output": "python -m venv myenv",
+        "explanation": "Creates a new virtual environment named 'myenv' for package isolation."
+    },
+    {
+        "input": "List all installed Python packages",
+        "output": "pip list",
+        "explanation": "Displays all installed Python packages in the current environment."
+    },
+    {
+        "input": "Upgrade pip to the latest version",
+        "output": "pip install --upgrade pip",
+        "explanation": "Upgrades the pip package manager to the latest available version."
+    },
+    {
+        "input": "Run a Python script inside a virtual environment",
+        "output": "source myenv/bin/activate && python myscript.py",
+        "explanation": "Activates the virtual environment and runs a Python script within it."
+    },
+    {
+        "input": "Connect to a MySQL database",
+        "output": "mysql -u root -p",
+        "explanation": "Logs into a MySQL database using the root user."
+    },
+    {
+        "input": "List all PostgreSQL databases",
+        "output": "psql -U postgres -c '\\l'",
+        "explanation": "Lists all PostgreSQL databases available on the server."
+    },
+    {
+        "input": "Backup a MongoDB database",
+        "output": "mongodump --db mydatabase --out /backup/",
+        "explanation": "Creates a backup of the specified MongoDB database."
+    },
+    {
+        "input": "Restore a PostgreSQL database from a dump file",
+        "output": "psql -U postgres -d mydatabase -f backup.sql",
+        "explanation": "Restores a PostgreSQL database from a SQL dump file."
+    },
+    {
+        "input": "Check for failed login attempts",
+        "output": "grep 'Failed password' /var/log/auth.log",
+        "explanation": "Lists all failed SSH login attempts recorded in system logs."
+    },
+    {
+        "input": "Block an IP address using a firewall",
+        "output": "iptables -A INPUT -s 192.168.1.100 -j DROP",
+        "explanation": "Blocks all incoming traffic from the specified IP address."
+    },
+    {
+        "input": "Enable UFW firewall and allow SSH",
+        "output": "ufw enable && ufw allow ssh",
+        "explanation": "Enables the Uncomplicated Firewall (UFW) and allows SSH connections."
+    },
+    {
+        "input": "Scan a network for open ports using Nmap",
+        "output": "nmap -sS -p- 192.168.1.0/24",
+        "explanation": "Performs a stealth scan of all open ports on a given network subnet."
+    }
+]

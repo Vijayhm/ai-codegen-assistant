@@ -1,0 +1,59 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore model weights (especially Phi-2)
+model/phi-2/
+*.safetensors
+*.pt
+*.bin
+*.ckpt
+
+# Ignore quantized CodeLlama files
+CodeLlama-7B-GGUF/
+*.gguf
+
+# Ignore large datasets
+*.jsonl
+*.parquet
+*.csv
+*.tsv
+
+# Ignore virtual environments
+venv/
+.env/
+.venv/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and outputs
+*.log
+logs/
+output/
+runs/
+checkpoints/
+
+# Ignore VSCode settings (if any)
+.vscode/
+
+# Ignore user secrets and credentials
+*.env
+secrets.*
+token.*
+
+# Ignore temporary files
+*.bak
+*.swp
+*.tmp
+
+# Ignore test results
+htmlcov/
+coverage.*
+*.cover
+.cache/

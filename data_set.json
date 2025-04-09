@@ -1,0 +1,862 @@
+[
+    {
+        "input": "Check the current directory",
+        "output": "pwd",
+        "explanation": "Displays the full path of the current working directory."
+    },
+    {
+        "input": "List all files including hidden ones with detailed information",
+        "output": "ls -la",
+        "explanation": "Lists all files and directories, including hidden files, with detailed permissions, size, owner, and modification date."
+    },
+    {
+        "input": "Change directory",
+        "output": "cd <directory>",
+        "explanation": "Moves the current working directory to the specified directory."
+    },
+    {
+        "input": "Create a new directory",
+        "output": "mkdir <directory_name>",
+        "explanation": "Creates a new directory with the specified name."
+    },
+    {
+        "input": "Remove an empty directory",
+        "output": "rmdir <directory_name>",
+        "explanation": "Deletes an empty directory."
+    },
+    {
+        "input": "Remove a directory and its contents",
+        "output": "rm -rf <directory_name>",
+        "explanation": "Forcefully removes a directory and all its contents recursively."
+    },
+    {
+        "input": "Copy files or directories",
+        "output": "cp <source> <destination>",
+        "explanation": "Copies file(s) or directory from source to destination."
+    },
+    {
+        "input": "Move or rename files/directories",
+        "output": "mv <source> <destination>",
+        "explanation": "Moves or renames files and directories from source to destination."
+    },
+    {
+        "input": "Display contents of a file",
+        "output": "cat <file_name>",
+        "explanation": "Shows the entire contents of the specified file."
+    },
+    {
+        "input": "View file content page by page",
+        "output": "less <file_name>",
+        "explanation": "Displays file content one page at a time, navigable with arrow keys."
+    },
+    {
+        "input": "Search for a pattern within files",
+        "output": "grep '<pattern>' <file_name>",
+        "explanation": "Finds and displays lines containing the given pattern in a file."
+    },
+    {
+        "input": "Find files by name",
+        "output": "find <directory> -name '<filename>'",
+        "explanation": "Searches for files matching the given filename pattern within the specified directory."
+    },
+    {
+        "input": "Check system disk usage",
+        "output": "df -h",
+        "explanation": "Shows disk space usage for all filesystems in a human-readable format."
+    },
+    {
+        "input": "Check file or directory size",
+        "output": "du -sh <file_or_directory>",
+        "explanation": "Reports total disk usage of a file or directory in human-readable form."
+    },
+    {
+        "input": "Show running processes",
+        "output": "ps aux",
+        "explanation": "Displays all active processes with detailed information about each process."
+    },
+    {
+        "input": "Kill a process by ID",
+        "output": "kill <PID>",
+        "explanation": "Terminates a running process using its process ID (PID)."
+    },
+    {
+        "input": "Forcefully kill a process by ID",
+        "output": "kill -9 <PID>",
+        "explanation": "Forcefully terminates a process immediately."
+    },
+    {
+        "input": "Monitor real-time system resource usage",
+        "output": "top",
+        "explanation": "Provides a real-time view of system resource utilization, including CPU and memory usage."
+    },
+    {
+        "input": "Check memory usage",
+        "output": "free -h",
+        "explanation": "Displays available and used memory in human-readable format."
+    },
+    {
+        "input": "Check network connections and ports",
+        "output": "netstat -tulnp",
+        "explanation": "Lists active network connections, listening ports, and associated processes."
+    },
+    {
+        "input": "Download files from internet",
+        "output": "wget <URL>",
+        "explanation": "Downloads files directly from the specified URL to the current directory."
+    },
+    {
+        "input": "Compress files into a tar.gz archive",
+        "output": "tar -czvf <archive.tar.gz> <directory_or_files>",
+        "explanation": "Creates a compressed tar.gz archive from specified files or directories."
+    },
+    {
+        "input": "Extract a tar.gz archive",
+        "output": "tar -xzvf <archive.tar.gz>",
+        "explanation": "Extracts files and directories from a tar.gz archive."
+    },
+    {
+        "input": "Check Linux kernel version",
+        "output": "uname -a",
+        "explanation": "Displays detailed information about the system and kernel version."
+    },
+    {
+        "input": "Show IP address",
+        "output": "ip addr show",
+        "explanation": "Shows the current IP address configuration of network interfaces."
+    },
+    {
+        "input": "Display current user",
+        "output": "whoami",
+        "explanation": "Shows the username of the currently logged-in user."
+    },
+    {
+        "input": "Add a new user",
+        "output": "sudo adduser <username>",
+        "explanation": "Creates a new user account with a home directory."
+    },
+    {
+        "input": "Change user password",
+        "output": "passwd <username>",
+        "explanation": "Allows changing or setting a password for the specified user."
+    },
+    {
+        "input": "Switch to another user",
+        "output": "su - <username>",
+        "explanation": "Switches the current session to another user, loading their environment."
+    },
+    {
+        "input": "Update system packages (Debian/Ubuntu)",
+        "output": "sudo apt update && sudo apt upgrade -y",
+        "explanation": "Updates the package list and upgrades installed packages to the latest version."
+    },
+    {
+        "input": "Check network connectivity",
+        "output": "ping <domain_or_ip>",
+        "explanation": "Checks connectivity and response time to the specified domain or IP address."
+    },
+    {
+        "input": "SSH into a remote server",
+        "output": "ssh user@<server_ip>",
+        "explanation": "Establishes a secure shell connection to a remote server."
+    },
+    {
+        "input": "Check current time and date",
+        "output": "date",
+        "explanation": "Displays the current date and time."
+    },
+    {
+        "input": "Clear terminal screen",
+        "output": "clear",
+        "explanation": "Clears all text and commands from the terminal screen."
+    },
+    {
+        "input": "View command history",
+        "output": "history",
+        "explanation": "Shows previously executed commands in the current session."
+    },
+    {
+        "input": "Reboot system immediately",
+        "output": "sudo reboot",
+        "explanation": "Immediately restarts the Linux system."
+    },
+    {
+        "input": "Shutdown system immediately",
+        "output": "sudo shutdown now",
+        "explanation": "Immediately shuts down the Linux system."
+    },
+    {
+        "input": "Check permissions of a file or directory",
+        "output": "ls -l <file_or_directory>",
+        "explanation": "Displays detailed permissions and ownership information."
+    },
+    {
+        "input": "Change permissions of a file",
+        "output": "chmod 755 <file_name>",
+        "explanation": "Changes file permissions to read, write, and execute for owner, and read/execute for others."
+    },
+    {
+        "input": "Change ownership of file or directory",
+        "output": "sudo chown user:group <file_or_directory>",
+        "explanation": "Changes the owner and group of a file or directory."
+    },
+    {
+        "input": "Create symbolic link",
+        "output": "ln -s <original_file> <link_name>",
+        "explanation": "Creates a shortcut (symbolic link) to the original file."
+    },
+    {
+        "input": "Check currently logged-in users",
+        "output": "w",
+        "explanation": "Displays who is logged in and their activities."
+    },
+
+
+    {
+        "input": "Initialize a new Git repository",
+        "output": "git init",
+        "explanation": "Creates a new Git repository in the current directory."
+    },
+    {
+        "input": "Clone a repository",
+        "output": "git clone <repository_url>",
+        "explanation": "Copies a remote repository to your local machine."
+    },
+    {
+        "input": "Check the current status of changes",
+        "output": "git status",
+        "explanation": "Shows the status of changes in the working directory and staging area."
+    },
+    {
+        "input": "Stage all files for commit",
+        "output": "git add .",
+        "explanation": "Stages all modified and new files for the next commit."
+    },
+    {
+        "input": "Stage specific file(s) for commit",
+        "output": "git add <file_name>",
+        "explanation": "Stages specific file(s) for the next commit."
+    },
+    {
+        "input": "Commit staged files with a message",
+        "output": "git commit -m 'Your commit message'",
+        "explanation": "Creates a new commit with the staged files and attaches a commit message."
+    },
+    {
+        "input": "Amend the previous commit",
+        "output": "git commit --amend -m 'Updated commit message'",
+        "explanation": "Edits the previous commit, updating its message or adding staged changes."
+    },
+    {
+        "input": "Push commits to the remote repository",
+        "output": "git push origin <branch_name>",
+        "explanation": "Pushes committed changes to the specified remote branch."
+    },
+    {
+        "input": "Fetch latest changes from the remote repository",
+        "output": "git fetch origin",
+        "explanation": "Retrieves updates from the remote repository without merging."
+    },
+    {
+        "input": "Pull and merge latest changes",
+        "output": "git pull origin <branch_name>",
+        "explanation": "Fetches and merges the latest changes from the specified remote branch."
+    },
+    {
+        "input": "Check commit history",
+        "output": "git log",
+        "explanation": "Shows detailed commit history."
+    },
+    {
+        "input": "Check commit history in compact format",
+        "output": "git log --oneline --graph --decorate",
+        "explanation": "Shows commit history compactly with visual branches and tags."
+    },
+    {
+        "input": "Check differences before staging",
+        "output": "git diff",
+        "explanation": "Shows differences between the working directory and the staging area."
+    },
+    {
+        "input": "Check differences of staged changes",
+        "output": "git diff --staged",
+        "explanation": "Shows differences between staged files and the last commit."
+    },
+    {
+        "input": "Create a new branch",
+        "output": "git branch <branch_name>",
+        "explanation": "Creates a new branch from the current branch."
+    },
+    {
+        "input": "Switch to an existing branch",
+        "output": "git checkout <branch_name>",
+        "explanation": "Switches your working directory to another existing branch."
+    },
+    {
+        "input": "Create and switch to a new branch",
+        "output": "git checkout -b <branch_name>",
+        "explanation": "Creates and switches to a new branch in a single step."
+    },
+    {
+        "input": "Delete a local branch",
+        "output": "git branch -d <branch_name>",
+        "explanation": "Deletes a local branch safely after it's merged."
+    },
+    {
+        "input": "Forcefully delete a local branch",
+        "output": "git branch -D <branch_name>",
+        "explanation": "Forcefully deletes a local branch even if it's not merged."
+    },
+    {
+        "input": "Merge branch into current branch",
+        "output": "git merge <branch_name>",
+        "explanation": "Merges the specified branch into the current branch."
+    },
+    {
+        "input": "Stash uncommitted changes",
+        "output": "git stash",
+        "explanation": "Temporarily saves uncommitted changes to reapply later."
+    },
+    {
+        "input": "List all stashed changes",
+        "output": "git stash list",
+        "explanation": "Shows all stashed changes available."
+    },
+    {
+        "input": "Apply latest stashed changes",
+        "output": "git stash pop",
+        "explanation": "Applies and removes the latest stash."
+    },
+    {
+        "input": "Apply latest stashed changes without removing from stash",
+        "output": "git stash apply",
+        "explanation": "Applies the latest stash without deleting it."
+    },
+    {
+        "input": "View remote repositories",
+        "output": "git remote -v",
+        "explanation": "Lists remote repositories connected to your local repository."
+    },
+    {
+        "input": "Add a new remote repository",
+        "output": "git remote add origin <repository_url>",
+        "explanation": "Adds a new remote repository."
+    },
+    {
+        "input": "Remove a remote repository",
+        "output": "git remote remove origin",
+        "explanation": "Removes an existing remote repository reference."
+    },
+    {
+        "input": "Rename a remote repository",
+        "output": "git remote rename <old_name> <new_name>",
+        "explanation": "Renames an existing remote repository."
+    },
+    {
+        "input": "Revert a commit",
+        "output": "git revert <commit_hash>",
+        "explanation": "Creates a new commit to undo changes from a specified commit."
+    },
+    {
+        "input": "Reset to a previous commit discarding recent changes",
+        "output": "git reset --hard <commit_hash>",
+        "explanation": "Resets the branch to a specified commit and permanently discards uncommitted changes."
+    },
+    {
+        "input": "Reset to a previous commit preserving changes",
+        "output": "git reset --soft <commit_hash>",
+        "explanation": "Moves HEAD back to a previous commit without discarding changes, keeping them staged."
+    },
+    {
+        "input": "Show detailed commit information",
+        "output": "git show <commit_hash>",
+        "explanation": "Displays detailed changes in a specific commit."
+    },
+    {
+        "input": "Tag a specific commit",
+        "output": "git tag -a v1.0 -m 'Release version 1.0'",
+        "explanation": "Creates an annotated tag pointing to a specific commit."
+    },
+    {
+        "input": "List all tags",
+        "output": "git tag",
+        "explanation": "Displays all tags created in the repository."
+    },
+    {
+        "input": "Push tags to remote repository",
+        "output": "git push --tags",
+        "explanation": "Pushes all local tags to the remote repository."
+    },
+    {
+        "input": "Check who last modified each line of a file",
+        "output": "git blame <file_name>",
+        "explanation": "Shows the last commit details for each line in a file."
+    },
+    {
+        "input": "Clean untracked files from working directory",
+        "output": "git clean -fd",
+        "explanation": "Removes all untracked files and directories from your repository."
+    },
+    {
+        "input": "Set global user configuration",
+        "output": "git config --global user.name 'Your Name' && git config --global user.email 'youremail@example.com'",
+        "explanation": "Configures your Git username and email globally."
+    },
+    {
+        "input": "List Git configuration settings",
+        "output": "git config --list",
+        "explanation": "Displays all Git configuration settings."
+    },
+    {
+        "input": "Cherry-pick a specific commit",
+        "output": "git cherry-pick <commit_hash>",
+        "explanation": "Applies changes introduced by a specific commit onto the current branch."
+    },
+    {
+        "input": "Resolve merge conflicts manually",
+        "output": "git mergetool",
+        "explanation": "Opens configured merge tool to resolve conflicts."
+    },
+    {
+        "input": "Abort an ongoing merge",
+        "output": "git merge --abort",
+        "explanation": "Cancels an ongoing merge operation and restores the pre-merge state."
+    },
+    {
+        "input": "Show changes introduced by a commit",
+        "output": "git show <commit_hash>",
+        "explanation": "Displays the changes introduced by a specific commit."
+    },
+    {
+        "input": "Show changes between two commits",
+        "output": "git diff <commit_hash1> <commit_hash2>",
+        "explanation": "Shows the differences between two specified commits."
+    },
+    {
+        "input": "Show changes in a specific file between two commits",
+        "output": "git diff <commit_hash1> <commit_hash2> -- <file_name>",
+        "explanation": "Displays changes in a specific file between two commits."
+    },
+    {
+        "input": "Show commits that modified a specific file",
+        "output": "git log -- <file_name>",
+        "explanation": "Lists commits that modified the specified file."
+    },
+    {
+        "input": "Show commits by a specific author",
+        "output": "git log --author='Author Name'",
+        "explanation": "Displays commits made by a specific author."
+    },
+    {
+        "input": "Show commits since a specific date",
+        "output": "git log --since='YYYY-MM-DD'",
+        "explanation": "Lists commits made since the specified date."
+    },
+    {
+        "input": "Show commits until a specific date",
+        "output": "git log --until='YYYY-MM-DD'",
+        "explanation": "Displays commits made until the specified date."
+    },
+    {
+        "input": "Show commits in a specific range of dates",
+        "output": "git log --after='YYYY-MM-DD' --before='YYYY-MM-DD'",
+        "explanation": "Lists commits made within a specific range of dates."
+    },
+    {
+        "input": "Show commits with a specific commit message",
+        "output": "git log --grep='keyword'",
+        "explanation": "Displays commits with a specific keyword in the commit message."
+    },
+    {
+        "input": "Show commits that include a specific change",
+        "output": "git log -S'keyword'",
+        "explanation": "Lists commits that introduced or removed a specific keyword."
+    },
+
+
+
+
+    {
+        "input": "Check Docker version and installation",
+        "output": "docker --version",
+        "explanation": "Displays the currently installed Docker version."
+    },
+    {
+        "input": "List all Docker images",
+        "output": "docker images",
+        "explanation": "Lists all locally available Docker images."
+    },
+    {
+        "input": "Pull an image from Docker Hub",
+        "output": "docker pull <image_name>",
+        "explanation": "Downloads a Docker image from Docker Hub or another registry."
+    },
+    {
+        "input": "Build a Docker image from a Dockerfile",
+        "output": "docker build -t <image_name:tag> .",
+        "explanation": "Builds a Docker image from a Dockerfile in the current directory with a specific tag."
+    },
+    {
+        "input": "Run a Docker container from an image",
+        "output": "docker run -d --name <container_name> <image_name>",
+        "explanation": "Starts a new container in detached mode with the specified name using the given image."
+    },
+    {
+        "input": "Run a Docker container interactively",
+        "output": "docker run -it <image_name> /bin/bash",
+        "explanation": "Starts a container interactively and provides a shell prompt."
+    },
+    {
+        "input": "List all running containers",
+        "output": "docker ps",
+        "explanation": "Lists currently running Docker containers."
+    },
+    {
+        "input": "List all containers including stopped ones",
+        "output": "docker ps -a",
+        "explanation": "Displays all containers, including stopped ones."
+    },
+    {
+        "input": "Stop a running container",
+        "output": "docker stop <container_name_or_id>",
+        "explanation": "Stops a currently running container."
+    },
+    {
+        "input": "Start a stopped container",
+        "output": "docker start <container_name_or_id>",
+        "explanation": "Starts a previously stopped container."
+    },
+    {
+        "input": "Restart a running container",
+        "output": "docker restart <container_name_or_id>",
+        "explanation": "Restarts an existing container."
+    },
+    {
+        "input": "Remove a container",
+        "output": "docker rm <container_name_or_id>",
+        "explanation": "Deletes a stopped Docker container."
+    },
+    {
+        "input": "Forcefully remove a running container",
+        "output": "docker rm -f <container_name_or_id>",
+        "explanation": "Forcefully deletes a running Docker container."
+    },
+    {
+        "input": "Remove a Docker image",
+        "output": "docker rmi <image_name_or_id>",
+        "explanation": "Deletes a Docker image from local storage."
+    },
+    {
+        "input": "View logs of a container",
+        "output": "docker logs <container_name_or_id>",
+        "explanation": "Shows the log output from a specific Docker container."
+    },
+    {
+        "input": "View real-time logs of a container",
+        "output": "docker logs -f <container_name_or_id>",
+        "explanation": "Streams real-time logs from a Docker container."
+    },
+    {
+        "input": "Execute commands inside a running container",
+        "output": "docker exec -it <container_name_or_id> /bin/bash",
+        "explanation": "Provides an interactive shell inside a running container."
+    },
+    {
+        "input": "Copy files from container to host",
+        "output": "docker cp <container_name>:<container_path> <host_path>",
+        "explanation": "Copies files or directories from a container to the local host."
+    },
+    {
+        "input": "Copy files from host to container",
+        "output": "docker cp <host_path> <container_name>:<container_path>",
+        "explanation": "Copies files or directories from the local host to a container."
+    },
+    {
+        "input": "Show detailed information of a container",
+        "output": "docker inspect <container_name_or_id>",
+        "explanation": "Displays detailed configuration and state information about a container."
+    },
+    {
+        "input": "Show Docker system disk usage",
+        "output": "docker system df",
+        "explanation": "Shows disk usage by Docker images, containers, and volumes."
+    },
+    {
+        "input": "Clean up unused Docker objects",
+        "output": "docker system prune",
+        "explanation": "Removes all unused containers, networks, and dangling images."
+    },
+    {
+        "input": "Clean up all unused Docker objects (including volumes)",
+        "output": "docker system prune -a --volumes",
+        "explanation": "Forcefully removes all unused containers, images, networks, and volumes."
+    },
+    {
+        "input": "Tag an existing Docker image",
+        "output": "docker tag <existing_image> <new_tag>",
+        "explanation": "Assigns a new tag to an existing Docker image."
+    },
+    {
+        "input": "Push Docker image to Docker Hub",
+        "output": "docker push <image_name:tag>",
+        "explanation": "Uploads a locally built Docker image to Docker Hub or another registry."
+    },
+    {
+        "input": "Login to Docker Hub",
+        "output": "docker login",
+        "explanation": "Authenticates the Docker client with Docker Hub."
+    },
+    {
+        "input": "Logout from Docker Hub",
+        "output": "docker logout",
+        "explanation": "Logs out from Docker Hub or another Docker registry."
+    },
+    {
+        "input": "List Docker networks",
+        "output": "docker network ls",
+        "explanation": "Lists all available Docker networks."
+    },
+    {
+        "input": "Create a Docker network",
+        "output": "docker network create <network_name>",
+        "explanation": "Creates a new user-defined Docker network."
+    },
+    {
+        "input": "Connect container to a network",
+        "output": "docker network connect <network_name> <container_name>",
+        "explanation": "Connects a running container to an existing Docker network."
+    },
+    {
+        "input": "Disconnect container from network",
+        "output": "docker network disconnect <network_name> <container_name>",
+        "explanation": "Disconnects a running container from a Docker network."
+    },
+    {
+        "input": "Remove Docker network",
+        "output": "docker network rm <network_name>",
+        "explanation": "Deletes an existing Docker network."
+    },
+    {
+        "input": "List Docker volumes",
+        "output": "docker volume ls",
+        "explanation": "Shows all Docker volumes available on the host."
+    },
+    {
+        "input": "Create Docker volume",
+        "output": "docker volume create <volume_name>",
+        "explanation": "Creates a new Docker volume."
+    },
+    {
+        "input": "Remove Docker volume",
+        "output": "docker volume rm <volume_name>",
+        "explanation": "Deletes a Docker volume."
+    },
+    {
+        "input": "Show Docker system-wide information",
+        "output": "docker info",
+        "explanation": "Displays system-wide information about Docker installation."
+    },
+    {
+        "input": "Pause a running container",
+        "output": "docker pause <container_name_or_id>",
+        "explanation": "Pauses all processes in a running container."
+    },
+    {
+        "input": "Unpause a paused container",
+        "output": "docker unpause <container_name_or_id>",
+        "explanation": "Resumes execution of a previously paused container."
+    },
+    {
+        "input": "Export a container's filesystem as a tar archive",
+        "output": "docker export <container_name_or_id> -o container.tar",
+        "explanation": "Exports the container's filesystem to a tar file."
+    },
+    {
+        "input": "Import filesystem tar to create a Docker image",
+        "output": "docker import container.tar <new_image_name>",
+        "explanation": "Imports a container filesystem archive to create a new Docker image."
+    },
+
+
+    {
+        "input": "Configure AWS CLI with credentials",
+        "output": "aws configure",
+        "explanation": "Sets up AWS CLI by prompting for Access Key, Secret Key, default region, and output format."
+    },
+    {
+        "input": "List all S3 buckets",
+        "output": "aws s3 ls",
+        "explanation": "Lists all available S3 buckets in your AWS account."
+    },
+    {
+        "input": "Create a new S3 bucket",
+        "output": "aws s3 mb s3://<bucket-name>",
+        "explanation": "Creates a new Amazon S3 bucket."
+    },
+    {
+        "input": "Delete an S3 bucket",
+        "output": "aws s3 rb s3://<bucket-name>",
+        "explanation": "Deletes an empty Amazon S3 bucket."
+    },
+    {
+        "input": "Force delete an S3 bucket including its contents",
+        "output": "aws s3 rb s3://<bucket-name> --force",
+        "explanation": "Deletes an S3 bucket along with all objects inside it."
+    },
+    {
+        "input": "Upload files to S3 bucket",
+        "output": "aws s3 cp <local-file> s3://<bucket-name>/",
+        "explanation": "Uploads a local file to the specified S3 bucket."
+    },
+    {
+        "input": "Download files from S3 bucket",
+        "output": "aws s3 cp s3://<bucket-name>/<file> <local-path>",
+        "explanation": "Downloads files from an S3 bucket to local storage."
+    },
+    {
+        "input": "Synchronize local folder with S3 bucket",
+        "output": "aws s3 sync <local-folder> s3://<bucket-name>",
+        "explanation": "Synchronizes files between a local folder and an S3 bucket."
+    },
+    {
+        "input": "List EC2 instances",
+        "output": "aws ec2 describe-instances",
+        "explanation": "Provides detailed information about all EC2 instances."
+    },
+    {
+        "input": "Start an EC2 instance",
+        "output": "aws ec2 start-instances --instance-ids <instance-id>",
+        "explanation": "Starts a stopped EC2 instance."
+    },
+    {
+        "input": "Stop an EC2 instance",
+        "output": "aws ec2 stop-instances --instance-ids <instance-id>",
+        "explanation": "Stops a running EC2 instance."
+    },
+    {
+        "input": "Terminate an EC2 instance",
+        "output": "aws ec2 terminate-instances --instance-ids <instance-id>",
+        "explanation": "Terminates (permanently deletes) an EC2 instance."
+    },
+    {
+        "input": "List IAM users",
+        "output": "aws iam list-users",
+        "explanation": "Lists all IAM users in your AWS account."
+    },
+    {
+        "input": "Create IAM user",
+        "output": "aws iam create-user --user-name <username>",
+        "explanation": "Creates a new IAM user."
+    },
+    {
+        "input": "Attach IAM policy to a user",
+        "output": "aws iam attach-user-policy --user-name <username> --policy-arn <policy-arn>",
+        "explanation": "Attaches an existing IAM policy to a specified IAM user."
+    },
+    {
+        "input": "List CloudFormation stacks",
+        "output": "aws cloudformation describe-stacks",
+        "explanation": "Lists all CloudFormation stacks and their details."
+    },
+    {
+        "input": "Create CloudFormation stack",
+        "output": "aws cloudformation create-stack --stack-name <stack-name> --template-body file://template.yaml",
+        "explanation": "Creates a new CloudFormation stack using a specified template."
+    },
+    {
+        "input": "Delete CloudFormation stack",
+        "output": "aws cloudformation delete-stack --stack-name <stack-name>",
+        "explanation": "Deletes the specified CloudFormation stack and its resources."
+    },
+    {
+        "input": "List Lambda functions",
+        "output": "aws lambda list-functions",
+        "explanation": "Displays all AWS Lambda functions in your account."
+    },
+    {
+        "input": "Invoke Lambda function",
+        "output": "aws lambda invoke --function-name <function-name> output.txt",
+        "explanation": "Invokes an AWS Lambda function and stores output in a file."
+    },
+    {
+        "input": "List all DynamoDB tables",
+        "output": "aws dynamodb list-tables",
+        "explanation": "Lists all existing DynamoDB tables in your account."
+    },
+    {
+        "input": "Describe a DynamoDB table",
+        "output": "aws dynamodb describe-table --table-name <table-name>",
+        "explanation": "Provides detailed information about a specific DynamoDB table."
+    },
+    {
+        "input": "List AWS regions",
+        "output": "aws ec2 describe-regions",
+        "explanation": "Lists all AWS regions available for your account."
+    },
+    {
+        "input": "List AWS availability zones",
+        "output": "aws ec2 describe-availability-zones",
+        "explanation": "Lists availability zones within your current AWS region."
+    },
+    {
+        "input": "Describe AWS account limits and usage",
+        "output": "aws service-quotas list-service-quotas --service-code ec2",
+        "explanation": "Lists quotas and limits for EC2 or other specified AWS services."
+    },
+    {
+        "input": "List CloudWatch alarms",
+        "output": "aws cloudwatch describe-alarms",
+        "explanation": "Displays CloudWatch alarms configured in your AWS account."
+    },
+    {
+        "input": "List Route 53 hosted zones",
+        "output": "aws route53 list-hosted-zones",
+        "explanation": "Lists all Route 53 hosted zones (DNS configurations)."
+    },
+    {
+        "input": "Create CloudWatch log group",
+        "output": "aws logs create-log-group --log-group-name <log-group>",
+        "explanation": "Creates a new CloudWatch log group."
+    },
+    {
+        "input": "Put item into DynamoDB table",
+        "output": "aws dynamodb put-item --table-name <table> --item '{\"key\": {\"S\": \"value\"}}'",
+        "explanation": "Inserts a new item into a specified DynamoDB table."
+    },
+    {
+        "input": "Describe AWS Elastic Load Balancers (ELB)",
+        "output": "aws elb describe-load-balancers",
+        "explanation": "Lists and describes all classic ELBs in your AWS account."
+    },
+    {
+        "input": "Describe AWS Application Load Balancers (ALB)",
+        "output": "aws elbv2 describe-load-balancers",
+        "explanation": "Lists and describes all Application and Network Load Balancers in your AWS account."
+    },
+    {
+        "input": "Create a new AWS security group",
+        "output": "aws ec2 create-security-group --group-name <name> --description 'Description here'",
+        "explanation": "Creates a new EC2 security group."
+    },
+    {
+        "input": "Authorize inbound rules to security group",
+        "output": "aws ec2 authorize-security-group-ingress --group-id <sg-id> --protocol tcp --port 22 --cidr 0.0.0.0/0",
+        "explanation": "Adds inbound SSH rule to an existing security group."
+    },
+    {
+        "input": "Revoke security group inbound rule",
+        "output": "aws ec2 revoke-security-group-ingress --group-id <sg-id> --protocol tcp --port 22 --cidr 0.0.0.0/0",
+        "explanation": "Removes inbound SSH rule from a security group."
+    },
+    {
+        "input": "List ECS clusters",
+        "output": "aws ecs list-clusters",
+        "explanation": "Lists Amazon ECS clusters in your AWS account."
+    },
+    {
+        "input": "List SNS topics",
+        "output": "aws sns list-topics",
+        "explanation": "Lists all Amazon SNS topics."
+    }
+]
+
+

@@ -1,0 +1,32 @@
+[
+    {
+        "input": "Push my latest code to GitHub",
+        "output": "git add . && git commit -m 'Latest update' && git push origin main",
+        "explanation": "Stages all changes, commits them with a message, and pushes to the main branch."
+    },
+    {
+        "input": "Create a new branch called 'feature-x'",
+        "output": "git checkout -b feature-x",
+        "explanation": "Creates and switches to a new branch named 'feature-x'."
+    },
+    {
+        "input": "Check the status of my repository",
+        "output": "git status",
+        "explanation": "Shows the current state of the working directory and staging area."
+    },
+    {
+        "input": "List all my AWS S3 buckets",
+        "output": "aws s3 ls",
+        "explanation": "Lists all S3 buckets in your AWS account."
+    },
+    {
+        "input": "Restart the Docker container named 'webapp'",
+        "output": "docker restart webapp",
+        "explanation": "Restarts the Docker container named 'webapp'."
+    },
+    {
+        "input": "List all files in the current directory",
+        "output": "ls -lah",
+        "explanation": "Lists all files with detailed info including sizes in a human-readable format."
+    }
+]
